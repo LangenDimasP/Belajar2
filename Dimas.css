@@ -38,6 +38,16 @@ html::-webkit-scrollbar-thumb{
     background: var(--bg-color);
 }
 
+/* Gaya untuk Dark Mode */
+body.dark-mode {
+    background-color: var(--bg-color); /* Warna latar belakang gelap */
+    color: #f9f9f9; /* Warna teks terang */
+}
+
+.portfolio-section.dark-mode {
+    background-color: #1e1e1e; /* Warna latar belakang section gelap */
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -523,6 +533,7 @@ span{
     padding: 3rem;
     background: var(--second-bg-color);
 }
+
 .education p{
 padding: 1rem;
     color: rgb(202, 194, 194);;
@@ -544,9 +555,9 @@ transition: transform 0.2s ease;
 
 .education .heading{
     text-align: center;
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 50px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .education .timeline{
@@ -719,10 +730,12 @@ margin-top: 5rem;
 
   }
   .h41{
+    padding: 3rem;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 500;
+    color: white;
   }
   .h41:hover{
     color: var(--main-color);
@@ -749,11 +762,12 @@ margin-top: 5rem;
     font-weight: 500;
     margin-bottom: 5rem;
     text-align: center;
+    color: white;
   }
   
   div.desc1:hover{
     color:var(--main-color);
-    filter: drop-shadow(0 0 10px black);
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 
   }
   
@@ -795,19 +809,20 @@ margin-top: 5rem;
   }
 
   .contact {
-    background-color: black;
+    background-color: #f9f9f9;
     padding: 2rem;
 }
 
 .contact p {
-    color: var(--bg-color)
+    color: white;
 }
 
 .contact h2 {
-    font-size: 40px;
-    margin-top: 80px;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 20px;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -828,11 +843,11 @@ margin-top: 5rem;
     width: 80%;
     padding: 1rem;
     font-size: 2rem;
-    color: var(--bg-color);
+    color: white;
     border-radius: 0.8rem;
     border: 2px solid var(--main-color);
     margin: 1rem 0;
-    background-color: white; /* Mengatur background input agar terlihat jelas */
+    background-color: var(--bg-color); /* Mengatur background input agar terlihat jelas */
 }
 
 .contact form .btn {
